@@ -9,9 +9,13 @@ public  class UserService extends Validation {
 
     @Override
     public void ekleme(Scanner sc,User a) {
+        sc.nextLine();   // ilk verilen veri girisin cozumu
         a.name=getNameFromUser(sc);
+        System.out.println();
         a.tcNo=getTcNoFromUser(sc);
+        System.out.println();
         a.cinsiyet=getGenderFromUser(sc);
+        System.out.println();
     }
 
 

@@ -15,7 +15,7 @@ public abstract class Validation{
     // Name Validation
 
 
-    public boolean isValideName(String name){
+    public boolean isValideName(String name){//name bos geliyordu o yuzden if isEmpty kullancaz
 
         boolean isValid;
 
