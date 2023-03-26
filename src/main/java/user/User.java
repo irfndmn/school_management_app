@@ -2,11 +2,11 @@ package user;
 
 public class User {
 
-    public String name;
+    public  String name;
 
-    protected String tcNo;
+    protected  String tcNo;
 
-    public String cinsiyet;
+    public  String cinsiyet;
 
     public User() {
 

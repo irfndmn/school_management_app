@@ -9,7 +9,8 @@ public  class UserService extends Validation {
 
     @Override
     public void ekleme(Scanner sc,User a) {
-        sc.nextLine();   // ilk verilen veri girisin cozumu
+
+        sc.nextLine();  // ilk verilen veri girisin cozumu
         a.name=getNameFromUser(sc);
         System.out.println();
         a.tcNo=getTcNoFromUser(sc);
@@ -96,44 +97,5 @@ public  class UserService extends Validation {
         return gender;
 
     }
-
-
-
-
-
-/*
-    public void ekleme(Scanner sc, User a) {
-        String isim;
-        String tc;
-        String cinsiyet;
-
-        do{
-            System.out.print("Lutfen Isim Giriniz       : ");
-            sc.nextLine();
-            isim = sc.nextLine();
-
-        }while (!isValideName(isim));
-        a.name=formtName(isim);
-        System.out.println();
-        do{
-            System.out.print("Lutfen Tc No Giriniz      : ");
-            tc=sc.nextLine();
-        }while (!isValidTc(tc));
-        a.tcNo=tc;
-        System.out.println();
-
-        do {
-            System.out.print("Lutfen Cinsiyet Giriniz Erkek icin E, Kadin icin K  : ");
-            cinsiyet= sc.nextLine();
-        }while (cinsiyetDuz(cinsiyet)=="q");
-        a.cinsiyet=cinsiyetDuz(cinsiyet);
-        System.out.println();
-    }
- */
-
-
-
-
-
 
 }

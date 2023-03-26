@@ -36,7 +36,6 @@ public class TeacherService extends UserService {
                 System.out.println("Ogretmen Ekleme Isleminiz Basari Ile Tamamlanmistir...\n");
                 System.out.print("Cikis Icin Q, Devem Etmek Icin Herhangir Bir Tusa Basiniz  : ");
                 cikis = sc.next().substring(0, 1).toLowerCase();
-                sc.nextLine();
             }
 
         } while (!cikis.equals("q"));

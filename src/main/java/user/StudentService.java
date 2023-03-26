@@ -19,6 +19,7 @@ public class StudentService extends UserService {
         do {
             System.out.println("\n       ===============    Ogrenci Ekleme Islemi     ================     \n");
             super.ekleme(sc,a);
+
             do {
                 System.out.println("Lutfen Ogrencinin Sinifini Giriniz... \n1 - 1. Sinif \n2 - 2. Sinif  \n3 - 3. Sinif \n4 - 4. Sinif\n");
                  sinif = sc.next();
@@ -30,7 +31,10 @@ public class StudentService extends UserService {
             if (isAddedBefore(a.tcNo)) {
                 System.out.println("Lutfen Bilgileri Kontrol Ederek Tekrar Deneyiniz...");
             }else {
+
                 new Ogrenci(a.name,a.tcNo,ogrenciSinifi,a.cinsiyet,kayit);
+
+
                 System.out.println("Ogrenci Ekleme Isleminiz Basari Ile Tamamlanmistir...\n");
             }
                 System.out.print("Cikis Icin Q, Devem Etmek Icin Herhangir Bir Tusa Basiniz  : ");

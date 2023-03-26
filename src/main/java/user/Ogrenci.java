@@ -33,6 +33,7 @@ public class Ogrenci extends User{
         User_Info.ogrenciList.add(this);
 
     }
+
     public void countArtir(){
          ++count;
     }
